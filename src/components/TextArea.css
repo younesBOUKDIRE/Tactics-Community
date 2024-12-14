@@ -1,0 +1,87 @@
+.text-area-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 40px 5px 5px;
+    border: none;
+    background-color: #000000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cool-text-area {
+    width: 80%;
+    border: none;
+    outline: none;
+    resize: none; 
+    font-size: 16px;
+    line-height: 1.5;
+    color: #484c50;
+    background-color: transparent;
+    overflow: hidden; 
+    
+  }
+  
+  .cool-text-area::placeholder {
+    color: #657786;
+    font-style: italic;
+  }
+  
+  .character-counter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #657786;
+    user-select: none;
+  }
+  
+  .cool-text-area:focus {
+    border: none;
+    outline: none;
+    color: #ffffff;
+  }
+.Icons{
+  display: flex;
+  margin-top: 20px;
+}
+button.imgSelect{
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #0004ff !important;
+}
+.icon{
+  font-size: 18px;
+  border: none;
+  border-radius: 100px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button.post{
+  background-color: #0004ff;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  width: 70px;
+  cursor: pointer;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  transition: 0.5s;
+  margin-left: 180px;
+}
+button.post:hover{
+  background-color: #0004ff5e;
+  color: rgba(255, 255, 255, 0.377);
+  
+}
+.icon:hover{
+  transform: scale(1.3);
+}
+
+  
+  

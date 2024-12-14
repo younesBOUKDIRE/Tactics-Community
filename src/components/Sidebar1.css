@@ -1,0 +1,68 @@
+.sideBar1{
+    width: 25%;
+    position: fixed; 
+    left:0;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    will-change: transform;
+}
+.profileSideBar1{
+    display: flex;
+    width:  100%;
+    align-items: center;
+    height: 60px;
+    justify-self: center;
+    transition: 0.5s;
+}
+.profileSideBar1 a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileSideBar1:hover {
+    background-color: #75737338;
+}
+.profileSideBar1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 17px;
+}
+.profileSideBar1 h2{
+    margin: 0 0 0 15px; 
+    font-size: 15px;
+}
+.SideMenu1Item{
+    display: flex;
+    width:  100%;
+    align-items: center;
+    height: 50px;
+    justify-self: center;
+    transition: 0.5s;
+}
+.SideMenu1Item:hover {
+    background-color: #75737338;
+}
+.SideMenu1Item a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+.SideMenu1Item h2{
+    margin: 0 0 0 25px; 
+    font-size: 15px;
+}
+.iconDiv{
+    display: flex;
+    margin-left:25px ;
+    font-size: 20px;
+}
+.hr{
+    border-bottom:rgb(36, 35, 35) 1px solid;
+}

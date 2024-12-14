@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+img{
+    width: 530px;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    border-radius:  0 323px 323px 0px;
+    padding-right: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+h1.welcome{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 81px;
+    margin-left: 60px;
+}
+img#signup{
+    width: 20px;
+    margin-right: 10px;
+}
+img#apple{
+    width: 13px;
+    margin-right: 10px;
+}
+button.googleSign{
+    border: none;
+    text-decoration: none;
+    display: flex;
+    background-color: white;
+    padding: 9px;
+    width: 310px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 10px;
+    color: black;
+    transition: 0.3s;
+}
+button.googleSign:hover{
+    background-color: rgb(182, 197, 224);
+}
+.createAccount{
+    text-decoration: none;
+    display: flex;
+    background-color: rgb(0, 89, 255);
+    padding: 10px;
+    width: 310px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+}
+.createAccount:hover{
+    background-color: rgb(3, 53, 129);
+}
+button.login{
+    display: flex;
+    background-color: transparent;
+    padding: 10px;
+    width: 310px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 10px;
+    color: rgb(6, 75, 202);
+    border: 1px solid;
+}
+button.login:hover{
+    background: #010725;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better focus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background: #0c0c0c; /* Darker theme to match your design */
+    color: #eeeeee; /* Light text for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.popup.show .popup-content {
+    transform: scale(1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: white; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #393e46;
+    border-radius: 5px;
+    background: #393e46;
+    color: #eeeeee;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #002ab5; 
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #0021b5;
+    color: #eeeeee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #007f85; /* Darker shade on hover */
+}
+
+.close {
+    background: #7a4304ce;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.close:hover {
+    background: #a1e6009f; 
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.popup-content {
+    animation: slideDown 0.5s ease;
+}
+
+
+  footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container2, .container3 {
+        height: auto;
+        width: 100%;
+        border-radius:0 0 323px 323px;
+        padding-right: 10px;
+    }
+    .container2{
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1.welcome {
+        font-size: 6vw;
+        margin-top: 5vh;
+        margin-left: 5vw;
+    }
+
+    img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.welcome {
+        font-size: 5vw;
+        margin-top: 3vh;
+        margin-left: 3vw;
+    }
+
+    a.googleSign, .createAccount, button.login {
+        width: 90%;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+}

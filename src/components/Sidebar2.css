@@ -1,0 +1,131 @@
+.sideBar2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border: 0.2px solid rgb(36, 35, 35);
+    flex-direction: column;
+    border-top: none !important;
+    border-bottom: none !important;
+    position: fixed;
+    left: 25%;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    will-change: transform;/* Activates GPU rendering */
+}
+.sidebar2::-webkit-scrollbar {
+    display: none;
+}
+
+.sideBarchild2{
+    display: flex;
+    align-content: center;
+    position: fixed;
+    top: 10;
+    border-left:  1px solid rgb(36, 35, 35);
+    border-right:  1px solid rgb(36, 35, 35);
+    border-bottom:  1px solid rgb(36, 35, 35);
+    width: 100%;
+    padding-bottom: 15px;
+    background-color: #000000;
+}
+.profile{
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 30%;
+}
+button.profileredirect {
+    border: none;
+    background: none;
+    display: flex;
+}
+#profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 60px;
+    transition: ease-in 0.2s;
+    box-sizing: border-box; 
+}
+
+#profile:hover {
+    border: 3px solid rgb(167, 160, 160);
+    z-index: 1; 
+}
+
+  .posts {
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .post {
+    padding: 15px;
+    width: 100%;
+    background-color: #000000;
+    border-bottom: 1px solid #5e5959;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .post-image {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+  }
+button.userProfile{
+    border: none;
+    background: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.like,.comment,.share{
+    margin-top: 15px;
+    transition: ease 0.3s;
+    color: white;
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.like:hover{
+    color: #c23333;
+}
+.comment:hover{
+    color: rgb(55, 55, 156);
+}
+.share:hover{
+    color: rgb(58, 156, 55);
+}
+.userNameComments{
+    background-color: transparent;
+    border: none;
+    color: white;
+    color: rgb(67, 67, 240);
+    margin-right: 7px;
+}
+button.addComment{
+    border: none;
+    background-color: rgb(45, 45, 253);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
